@@ -23,4 +23,7 @@ public class Vehicule {
     private double tarifJounalier;
     @Enumerated(EnumType.STRING)
     private StatutVehicule statut;
+
+    @ManyToOne
+    private Agence agence;
 }
